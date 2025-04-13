@@ -1,0 +1,21 @@
+[package]
+name = "capvicam"
+version = "0.1.0"
+edition = "2021"
+build="build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+errno="0.3.8"
+log = "0.4.20"
+env_logger = "0.10.1"
+libc = "0.2.152"
+ctrlc = {version = "3.4.2"}
+clap = { version = "4.4.16", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+lazy_static = "1.4.0"
+tokio-util = "0.7.10"
+
+[build-dependencies]
+cc="1.0.83"
